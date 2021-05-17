@@ -42,7 +42,7 @@ module VagrantPlugins
 
             env[:ui].info(I18n.t(
                              'vagrant.actions.vm.forward_ports.forwarding_entry',
-                             **message_attributes
+                             **{message_attributes}
             ))
 
             ssh_pid = redirect_port(
